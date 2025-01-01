@@ -80,7 +80,7 @@ print(T2)
 
 
 
-
+'''
 data=(4,45,67,89)
 list_data=list(data)
 print(type(list_data))
@@ -91,7 +91,7 @@ tupple_data=tuple(list_data)
 print(tupple_data)
 
 
-'''
+
 #set operations
 data={1,2,3,4,5}
 #data2={3,4,5,6,7}
