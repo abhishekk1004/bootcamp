@@ -421,7 +421,7 @@ with open("notes2.txt","w") as dest_file:
 
 print("file copied successfully")
 
-
+'''
 #count lines, words, characters in a file
 with open("note.txt","r") as file:
     lines=file.readlines()
@@ -433,7 +433,7 @@ with open("note.txt","r") as file:
     print(f"Number of words: {num_words}")
     print(f"Number of characters: {num_characters}")
 
-'''    
+   
 
 #tell function
 with open("tell.txt","r") as file:
