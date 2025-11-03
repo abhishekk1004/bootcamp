@@ -402,6 +402,7 @@ with open("note.txt","r") as file:
     content=file.read()
     print(content)
 
+    '''
 #os
 import os
 os.rename("add.txt","added.txt")
@@ -421,7 +422,7 @@ with open("notes2.txt","w") as dest_file:
 
 print("file copied successfully")
 
-'''
+
 #count lines, words, characters in a file
 with open("note.txt","r") as file:
     lines=file.readlines()
