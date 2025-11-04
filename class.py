@@ -384,7 +384,7 @@ while True:
 
     print(f"Marks for student {i} in maths is {m1}, science is {m2}, english is {m3}, computer is {m4} and total is {total}")
 file.close()
-
+'''
 #appending to a file 'a' mode
 file=open("add.txt","a")
 file.write("this is appended line 1\n")
@@ -402,7 +402,7 @@ with open("note.txt","r") as file:
     content=file.read()
     print(content)
 
-    '''
+    
 #os
 import os
 os.rename("add.txt","added.txt")
