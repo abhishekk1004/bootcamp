@@ -329,7 +329,7 @@ data=[1,2,3,4,5]
 sum=reduce(lambda x,y: x+y, data)
 print("the total sum is", sum)
 
-
+'''
 
 #file handeling
 #reading files
@@ -384,7 +384,7 @@ while True:
 
     print(f"Marks for student {i} in maths is {m1}, science is {m2}, english is {m3}, computer is {m4} and total is {total}")
 file.close()
-'''
+
 #appending to a file 'a' mode
 file=open("add.txt","a")
 file.write("this is appended line 1\n")
