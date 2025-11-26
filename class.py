@@ -456,12 +456,12 @@ with open("tell.txt","r") as file:
     file.seek(0)
     content=file.read()
     print("full content:", content.split("\n")[5])
-'''
+
 #binary mode using seek
 with open("git.jpg",'rb') as file:
     file.seek(10)
     print(file.tell())
-
+'''
 #read file from middle
 with open("mid.txt","r") as file:
     midpoint=len(file.read())//2
