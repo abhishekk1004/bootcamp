@@ -547,3 +547,17 @@ with open("class.pkl","wb") as classfile:
 with open("class.pkl","rb") as classfile:
     loaded_data=pk.load(classfile)
     print("the loaded data is", loaded_data)
+
+#oop- Object-Oriented Programming
+#class
+#object
+#Encapsulation
+#Inheritance -types
+#int() method __int__
+#instance variable  
+#class variable
+#function inside class- method
+#polymorphism
+#Abstraction
+
+
