@@ -461,9 +461,89 @@ with open("tell.txt","r") as file:
 with open("git.jpg",'rb') as file:
     file.seek(10)
     print(file.tell())
-'''
+
 #read file from middle
 with open("mid.txt","r") as file:
     midpoint=len(file.read())//2
     file.seek(midpoint)
     print(file.read())
+
+
+#pickle fucntion
+import pickle
+#data=['abhishek', 24, 'pune']
+with open ("data.pkl","rb") as abhi:
+    loaded_data=pickle.load(abhi)
+
+print("the loaded data is", loaded_data)
+
+#print("data serialized successfully")
+
+
+import pickle
+class person:
+    def __init__(self, name, age, city):
+        self.name=name
+        self.age=age
+        self.city =city
+
+#p1=person("Ram",100,"aayodhya")
+#p2=person("sita",60, "janakpur")
+#p3=person("lakshman",90,"aayodhya")
+import pickle
+with open("person.pkl","rb") as persons:
+    object=pickle.load(persons)
+    
+print("the name is", object.name)
+print("the age is", object.age)
+print("the city is", object.city)
+
+    #pickle.dump(p1, address) 
+    #pickle.dump(p2, address)
+    #pickle.dump(p3, address)#
+
+
+student= {
+    "name":"abhishek",
+    "age":24,
+    "city":"kathmandu",
+    "skills":["python","java"]
+}
+with open("self.pkl","wb") as selffile:
+    pickle.dump(student, selffile)
+
+print("data serialized successfully")
+
+#dump & dumps
+data= [1,2,3,4,5]
+
+byte_data =pickle.dumps(data)
+original=pickle.loads(byte_data)
+print("the byte data is", byte_data)
+print("the original data is", original )
+
+'''
+# example using load loads dump and dumps
+import pickle as pk
+student={
+    "name":"Abhishek",
+    "age":24,
+    "city":"kathmandu",
+    "skills":["python","java"]
+}
+#dumps()
+byte_data=pk.dumps(student)
+print("byte data is", byte_data )
+
+#loads()
+print("from bytes: ")
+pk.loads(byte_data)
+
+#dump()
+with open("class.pkl","wb") as classfile:
+    pk.dump(student, classfile)
+
+#load()
+with open("class.pkl","rb") as classfile:
+    loaded_data=pk.load(classfile)
+    print("the loaded data is", loaded_data)
