@@ -608,23 +608,24 @@ print("dog2 species is", dog2.species)
 #inheritance
 class MithilaArt:
     def __init__(self):
-        self.style="Traditional"
-        self.color=["red","yellow","green","blue"]
+        self.style = "Traditional"
+        self.color = ["red", "yellow", "green", "blue"]
 
-        def show_info(self):
-            return f"style: {self.style}, colors: {(self.color)}"
+    def show_info(self):
+        return f"style: {self.style}, colors: {self.color}"
         
 class MadhubaniArt(MithilaArt):
     def __init__(self):
-        super().__init__()    #Inheritance parent's class constructor
-        self.border_design="Double line Geometric border"
+        super().__init__()    # Inheritance parent's class constructor
+        self.border_design = "Double line Geometric border"
 
-        def show(self):
-            return f"Border Design: {self.border_design}"
-        
-art=MadhubaniArt() #Creating object of child class
-print(art.show_info()) #Accessing inherited method
-print(art.show()) #Accessing child class method
+    def show(self):
+        return f"Border Design: {self.border_design}"
+
+if __name__ == "__main__":
+    art = MadhubaniArt()  # Creating object of child class
+    print(art.show_info())  # Accessing inherited method
+    print(art.show())  # Accessing child class method
 
         
 #style: Traditonal Mithila Style
@@ -670,12 +671,11 @@ class InstaAccount:
         self.username=username
         self.__private_message= ["this is private message"]  #private data
 
-        def add_message(self, msg):
-            self.__private_message.append(msg)  #private data
+    def add_message(self, msg):
+        self.__private_message.append(msg)  #private data
 
-        def show_message(self):
-            return self.__private_message #controlled access
-        
+    def show_message(self):
+        return self.__private_message #controlled access
 acc=InstaAccount("abhishek")
 acc.add_message("Hey bro whatuppp!!")
 print(acc.show_message()) #allowed
@@ -684,8 +684,8 @@ print(acc.show_message()) #allowed
 from abc import ABC, abstractmethod
 
 class Payment(ABC):
-    @abstractmethod   #user only sees 'pay', not the intern details
-    def process_payment(self):
+    @abstractmethod   # user-visible method is `pay`, subclasses implement it
+    def pay(self):
         pass
    
 class Esewa(Payment):
@@ -696,8 +696,12 @@ class Khalti(Payment):
     def pay(self):
         return "Processing payment through Khalti"
 
-payment=Esewa()
-print(printayment.pay())
+class FonePay(Payment):
+    def pay(self):
+        return "Processing payment through FonePay"
+    
+paymentt=FonePay()
+print(paymentt.pay())
     
 #overrriding 
 #Composition (HAS-A)
