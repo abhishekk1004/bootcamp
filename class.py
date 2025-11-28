@@ -522,7 +522,7 @@ original=pickle.loads(byte_data)
 print("the byte data is", byte_data)
 print("the original data is", original )
 
-'''
+
 # example using load loads dump and dumps
 import pickle as pk
 student={
@@ -560,4 +560,144 @@ with open("class.pkl","rb") as classfile:
 #polymorphism
 #Abstraction
 
+class Parent:
+    def show(self):
+        return "I am Parent"
 
+class Child(Parent):
+    def show(self):
+        return "I am Child (Overridden)"
+
+obj = Child()
+print(obj.show())
+
+
+#OOP 
+class Car:
+    brand="Tesla"
+    Colo="black"
+
+print("the car brand is", Car.brand)
+
+#function in a class
+
+class Subject:
+    def __init__(self,name,code): #constructor
+        self.name= name
+        self.code= code 
+subject1= Subject("maths",101)
+print("the subject name is", subject1.name)
+print("the subject code is", subject1.code)
+    
+#instance variable --> unique for each object
+#class variable --> common among all objects
+class Dog:
+    species="Bull dog"  #class variable
+
+    def __init__(self,name):
+        self.name=name #instance varibale
+
+dog1=Dog("tommy")
+dog2=Dog("bruno")
+
+print("dog1 name is", dog1.name)
+print("dog2 name is", dog2.name)
+print("dog1 species is", dog1.species)
+print("dog2 species is", dog2.species)
+
+#inheritance
+class MithilaArt:
+    def __init__(self):
+        self.style="Traditional"
+        self.color=["red","yellow","green","blue"]
+
+        def show_info(self):
+            return f"style: {self.style}, colors: {(self.color)}"
+        
+class MadhubaniArt(MithilaArt):
+    def __init__(self):
+        super().__init__()    #Inheritance parent's class constructor
+        self.border_design="Double line Geometric border"
+
+        def show(self):
+            return f"Border Design: {self.border_design}"
+        
+art=MadhubaniArt() #Creating object of child class
+print(art.show_info()) #Accessing inherited method
+print(art.show()) #Accessing child class method
+
+        
+#style: Traditonal Mithila Style
+#Color ""
+#Boder: Doub   
+
+#multiple inheritance
+class GrandParent:
+    def property(self):
+        return "5 bigha land at Janakpur"
+
+class Father(GrandParent):
+    def house(self):
+        return "3 BHK house at Kathmandu"
+
+class Abhishek(Father):
+    def bike(self):
+        return "java"
+
+obj=Abhishek()
+print(obj.property())
+
+#polymorphism
+class MomoSeller:
+    def call_customers(self):
+        return "yaha mitho momo painxa aaunus aaunus" 
+
+class PanipuriWala:
+    def call_customers(self):
+        return "haina yaha aaunus yaha mittho chatpato panipuri painxa aaunus aaunus"
+
+class Puriwala:
+    def call_customers(self):
+        return "aaunus aaunus yaha puri r sabji mittho cha"
+    
+for i in [MomoSeller(), PanipuriWala(), Puriwala()]:
+    print(i.call_customers())
+
+
+#Encapsulation
+class InstaAccount:
+    def __init__(self, username):
+        self.username=username
+        self.__private_message= ["this is private message"]  #private data
+
+        def add_message(self, msg):
+            self.__private_message.append(msg)  #private data
+
+        def show_message(self):
+            return self.__private_message #controlled access
+        
+acc=InstaAccount("abhishek")
+acc.add_message("Hey bro whatuppp!!")
+print(acc.show_message()) #allowed
+'''
+#Abstraction
+from abc import ABC, abstractmethod
+
+class Payment(ABC):
+    @abstractmethod   #user only sees 'pay', not the intern details
+    def process_payment(self):
+        pass
+   
+class Esewa(Payment):
+    def pay(self):
+        return "Processing payment through Esewa"
+
+class Khalti(Payment):
+    def pay(self):
+        return "Processing payment through Khalti"
+
+payment=Esewa()
+print(printayment.pay())
+    
+#overrriding 
+#Composition (HAS-A)
