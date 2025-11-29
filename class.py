@@ -549,16 +549,16 @@ with open("class.pkl","rb") as classfile:
     print("the loaded data is", loaded_data)
 
 #oop- Object-Oriented Programming
-#class
-#object
-#Encapsulation
-#Inheritance -types
-#int() method __int__
-#instance variable  
-#class variable
-#function inside class- method
-#polymorphism
-#Abstraction
+#class done
+#object done
+#Encapsulation done
+#Inheritance -types  done
+#int() method __int__ done
+#instance variable  done
+#class variable done
+#function inside class- method done
+#polymorphism done
+#Abstraction done
 
 class Parent:
     def show(self):
@@ -680,6 +680,7 @@ acc=InstaAccount("abhishek")
 acc.add_message("Hey bro whatuppp!!")
 print(acc.show_message()) #allowed
 '''
+
 #Abstraction
 from abc import ABC, abstractmethod
 
@@ -702,6 +703,45 @@ class FonePay(Payment):
     
 paymentt=FonePay()
 print(paymentt.pay())
+
+'''
     
 #overrriding 
 #Composition (HAS-A)
+
+
+class Parent:
+    def rules(self):
+        return "use phone for 1 hours."
+
+class Child(Parent):
+    def rules(self): #Overriding parent's method
+        return " haina haina Ma chai 4 ghanta reels hererw basxu"
+
+obj= Child()
+print(obj.rules())
+
+
+#Composition (HAS-A)
+
+#youtuber xa and wu sang k k hunxa?
+#1 camera
+#2 Microphone
+#3 Editor
+#4 Content creator/ Script writer
+
+#---> Camera 
+class Camera:
+    def record(self):
+        return "Recording video in 4K"
+    
+class YouTuber:
+    def __init__(self):
+        self.camera= Camera()  # Composition (HAS-A)---> youtuber has a camera 
+    
+    def create_content(self):
+        return self.camera.record() + " and editing the video"
+    
+yt_vid=YouTuber()
+print(yt_vid.create_content())
+'''
