@@ -705,11 +705,9 @@ paymentt=FonePay()
 print(paymentt.pay())
 
 '''
-    
-#overrriding 
-#Composition (HAS-A)
 
 
+#overrriding
 class Parent:
     def rules(self):
         return "use phone for 1 hours."
