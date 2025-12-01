@@ -704,7 +704,7 @@ class FonePay(Payment):
 paymentt=FonePay()
 print(paymentt.pay())
 
-'''
+
 
 
 #overrriding
@@ -742,4 +742,3 @@ class YouTuber:
     
 yt_vid=YouTuber()
 print(yt_vid.create_content())
-'''
