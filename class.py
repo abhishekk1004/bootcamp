@@ -664,6 +664,7 @@ class Puriwala:
 for i in [MomoSeller(), PanipuriWala(), Puriwala()]:
     print(i.call_customers())
 
+'''
 
 #Encapsulation
 class InstaAccount:
@@ -679,7 +680,6 @@ class InstaAccount:
 acc=InstaAccount("abhishek")
 acc.add_message("Hey bro whatuppp!!")
 print(acc.show_message()) #allowed
-'''
 
 #Abstraction
 from abc import ABC, abstractmethod
