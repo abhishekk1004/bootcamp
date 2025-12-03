@@ -647,7 +647,7 @@ class Abhishek(Father):
 
 obj=Abhishek()
 print(obj.property())
-
+'''
 #polymorphism
 class MomoSeller:
     def call_customers(self):
@@ -664,7 +664,7 @@ class Puriwala:
 for i in [MomoSeller(), PanipuriWala(), Puriwala()]:
     print(i.call_customers())
 
-'''
+
 
 #Encapsulation
 class InstaAccount:
