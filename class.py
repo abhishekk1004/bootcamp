@@ -604,6 +604,7 @@ print("dog1 name is", dog1.name)
 print("dog2 name is", dog2.name)
 print("dog1 species is", dog1.species)
 print("dog2 species is", dog2.species)
+'''
 
 #inheritance
 class MithilaArt:
@@ -647,7 +648,7 @@ class Abhishek(Father):
 
 obj=Abhishek()
 print(obj.property())
-'''
+
 #polymorphism
 class MomoSeller:
     def call_customers(self):
