@@ -561,7 +561,6 @@ with open("class.pkl","rb") as classfile:
 #Abstraction done
 '''
 
-
 class Parent:
     def show(self):
         return "I am Parent"
