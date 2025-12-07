@@ -547,7 +547,7 @@ with open("class.pkl","wb") as classfile:
 with open("class.pkl","rb") as classfile:
     loaded_data=pk.load(classfile)
     print("the loaded data is", loaded_data)
-
+'''
 #oop- Object-Oriented Programming
 #class done
 #object done
@@ -559,7 +559,7 @@ with open("class.pkl","rb") as classfile:
 #function inside class- method done
 #polymorphism done
 #Abstraction done
-'''
+
 
 class Parent:
     def show(self):
