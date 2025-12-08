@@ -522,7 +522,7 @@ original=pickle.loads(byte_data)
 print("the byte data is", byte_data)
 print("the original data is", original )
 
-
+'''
 # example using load loads dump and dumps
 import pickle as pk
 student={
@@ -547,7 +547,7 @@ with open("class.pkl","wb") as classfile:
 with open("class.pkl","rb") as classfile:
     loaded_data=pk.load(classfile)
     print("the loaded data is", loaded_data)
-'''
+
 #oop- Object-Oriented Programming
 #class done
 #object done
