@@ -479,7 +479,7 @@ print("the loaded data is", loaded_data)
 
 #print("data serialized successfully")
 
-
+'''
 import pickle
 class person:
     def __init__(self, name, age, city):
@@ -522,7 +522,7 @@ original=pickle.loads(byte_data)
 print("the byte data is", byte_data)
 print("the original data is", original )
 
-'''
+
 # example using load loads dump and dumps
 import pickle as pk
 student={
