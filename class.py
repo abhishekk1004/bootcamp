@@ -433,7 +433,7 @@ with open("note.txt","r") as file:
     print(f"Number of words: {num_words}")
     print(f"Number of characters: {num_characters}")
 
-    
+'''    
 
 #tell function
 with open("tell.txt","r") as file:
@@ -479,7 +479,7 @@ print("the loaded data is", loaded_data)
 
 #print("data serialized successfully")
 
-'''
+
 import pickle
 class person:
     def __init__(self, name, age, city):
