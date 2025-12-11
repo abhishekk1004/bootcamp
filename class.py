@@ -560,6 +560,8 @@ with open("class.pkl","rb") as classfile:
 #polymorphism done
 #Abstraction done
 '''
+
+
 class Parent:
     def show(self):
         return "I am Parent"
