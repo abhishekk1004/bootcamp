@@ -559,7 +559,7 @@ with open("class.pkl","rb") as classfile:
 #function inside class- method done
 #polymorphism done
 #Abstraction done
-
+'''
 class Parent:
     def show(self):
         return "I am Parent"
@@ -571,7 +571,7 @@ class Child(Parent):
 obj = Child()
 print(obj.show())
 
-'''
+
 #OOP 
 class Car:
     brand="Tesla"
