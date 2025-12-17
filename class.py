@@ -307,12 +307,12 @@ print("rhis is outer function")
 outer()
 print("end of program")
 #inner()  #error inner() is not defined
-
-#lamda
-#sum=lambda x,y,z: x+y+z, x-y-z, x*y*z
-#sum(10,20, 50)
-#print("the sum is", sum(10,20,50)(0,1,3))
 '''
+#lamda
+sum=lambda x,y,z: x+y+z, x-y-z, x*y*z
+sum(10,20, 50)
+print("the sum is", sum(10,20,50)(0,1,3))
+
 #map function
 numbers=2,3,4,5
 cube=map(lambda x: x*x*x, numbers)
