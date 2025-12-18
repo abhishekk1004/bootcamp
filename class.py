@@ -289,7 +289,7 @@ numbers=[10,15,20,25,30,35]
 even_numbers=filter(lambda x: x%2==0, numbers)
 print("the even numbers are", list(even_numbers))
 
-
+'''
 
 a=10 #global variable
 def outer():
@@ -307,7 +307,7 @@ print("rhis is outer function")
 outer()
 print("end of program")
 #inner()  #error inner() is not defined
-'''
+
 #lamda
 sum=lambda x,y,z: x+y+z, x-y-z, x*y*z
 sum(10,20, 50)
