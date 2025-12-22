@@ -206,6 +206,8 @@ def show(*nums):
     print("the total is",z)
 show(10,20,30)
 
+
+'''
 #keyword variable length arguments
 def display(**info):
     print("the name is", info['name'])
@@ -224,7 +226,7 @@ def hash_function(data):
 result=hash_function("0")
 print("the hash value is", result)
 
-'''
+
 
 #global variable
 x=4
