@@ -224,7 +224,7 @@ def hash_function(data):
 result=hash_function("0")
 print("the hash value is", result)
 
-
+'''
 
 #global variable
 x=4
@@ -289,7 +289,7 @@ numbers=[10,15,20,25,30,35]
 even_numbers=filter(lambda x: x%2==0, numbers)
 print("the even numbers are", list(even_numbers))
 
-'''
+
 
 a=10 #global variable
 def outer():
