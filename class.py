@@ -185,7 +185,7 @@ def seeme():
     seeme=x+y
     print("the total is", seeme)
 seeme()
-
+'''
 #paramter
 def add(second):
     first=10
@@ -193,7 +193,7 @@ def add(second):
     print("the total is", total)
 add(60) 
 add(90)
-'''
+
 #positional arguments
 def pag(name,place="Kathmandu"):
     
