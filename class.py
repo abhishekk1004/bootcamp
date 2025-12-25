@@ -151,6 +151,7 @@ def add_numbers(num1, num2): #parameters
     #print("the result is", result)
 #joding(5) #arguments
 
+'''
 
 #variable lenghth arguments
 def show(*nums):
@@ -185,7 +186,7 @@ def seeme():
     seeme=x+y
     print("the total is", seeme)
 seeme()
-'''
+
 #paramter
 def add(second):
     first=10
