@@ -131,7 +131,7 @@ dict.update(dict2)
 print(dict['place'])
 dict.clear()
 print(dict)
-
+''' 
 
 #function operations
 def greet(): #parameter
@@ -151,7 +151,7 @@ def add_numbers(num1, num2): #parameters
     #print("the result is", result)
 #joding(5) #arguments
 
-'''
+
 
 #variable lenghth arguments
 def show(*nums):
