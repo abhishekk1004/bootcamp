@@ -110,6 +110,8 @@ print(set1.update(set2))
 6# loops
 7# data structures
 
+
+'''
 #dictinoary operations
 data={'name':"abhishek", 'age':24, 'city':"pune"}
 print(data)
@@ -131,7 +133,7 @@ dict.update(dict2)
 print(dict['place'])
 dict.clear()
 print(dict)
-''' 
+
 
 #function operations
 def greet(): #parameter
