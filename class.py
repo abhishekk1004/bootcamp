@@ -90,6 +90,8 @@ print(list_data)
 tupple_data=tuple(list_data)
 print(tupple_data)
 
+
+'''
 #set operations
 data={1,2,3,4,5}
 #data2={3,4,5,6,7}
@@ -111,7 +113,7 @@ print(set1.update(set2))
 7# data structures
 
 
-'''
+
 #dictinoary operations
 data={'name':"abhishek", 'age':24, 'city':"pune"}
 print(data)
