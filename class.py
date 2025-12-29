@@ -193,7 +193,7 @@ def add(second):
     print("the total is", total)
 add(60) 
 add(90)
-
+'''
 #positional arguments
 def pag(name,place="Kathmandu"):
     
@@ -207,7 +207,7 @@ def show(*nums):
 show(10,20,30)
 
 
-'''
+
 #keyword variable length arguments
 def display(**info):
     print("the name is", info['name'])
