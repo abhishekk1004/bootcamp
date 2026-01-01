@@ -64,12 +64,12 @@ data.append(6)
 data.append("abhishek")
 print(data)
 
-
+'''
 data=[10,20,30,40]
 data2=data.copy()
 print(data2)
 
-'''
+
 T=1,2,3,'ram',
 print(T)
 list=list(T)
