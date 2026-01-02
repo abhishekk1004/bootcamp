@@ -69,7 +69,7 @@ data=[10,20,30,40]
 data2=data.copy()
 print(data2)
 
-
+'''
 T=1,2,3,'ram',
 print(T)
 list=list(T)
@@ -80,7 +80,7 @@ print(T2)
 
 
 
-'''
+
 data=(4,45,67,89)
 list_data=list(data)
 print(type(list_data))
